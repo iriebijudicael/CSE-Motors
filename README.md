@@ -21,7 +21,7 @@ You will need to either install or activate PNPM before using it. See https://pn
 4. The first time it may take a few minutes, depending on the speed of your computer and the speed of your Internet connection. This command will instruct PNPM to read the package.json file and download and install the dependencies (packages) needed for the project. It will build a "node_modules" folder storing each dependency and its dependencies. It should also create a pnpm-lock.yaml file. This file should NEVER be altered by you. It is an internal file (think of it as an inventory) that PNPM uses to keep track of everything in the project.
 
 ## Start the Express Server
-
+<!-- In the terminal tape this: pnpm add ejs express-ejs-layouts -->
 With the packages installed you're ready to run the initial test.
 1. If the VSC terminal is still open use it. If it is closed, open it again using the same command as before.
 2. Type the following command, then press Enter:
@@ -45,3 +45,8 @@ When you installed Git and cloned the remote repository in week 1, you should ha
 1. Go to http://localhost:5500 in a browser tab. Nothing should be visible as the server has not been setup to repond to that route.
 2. Add "/filename.html" to the end of the URL (replacing filename with the name of the file you moved to the public folder).
 3. You should see that page in the browser.
+
+
+4. PgAdmin4
+Database name: cse340_motor_db
+Password for database connection: msW7WYcn9O8Q3Bq90z96936ajSD9yTSq
