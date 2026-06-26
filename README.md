@@ -47,6 +47,24 @@ When you installed Git and cloned the remote repository in week 1, you should ha
 3. You should see that page in the browser.
 
 
+
+In the code we indicated that the JWT secret would be stored in the .env file for use in the JWT creation process. Let's now create that "secret" value.
+
+Open the .env file from the root of the project.
+Beneath the existing name - value pairs add the following:
+ACCESS_TOKEN_SECRET=
+With the name in place, let's create the actual value for the ACCESS_TOKEN_SECRET. It is critical that the secret value be random, so that it cannot be guessed. We will use the same process that was used to create the SESSION_SECRET value in Unit 4:
+Open a new VSC terminal.
+Type "node", press "Enter".
+
+Type "require('crypto').randomBytes(64).toString('hex')", press "Enter".
+
+Copy the generated string, including the single quotes on either end, and paste it as the value for the ACCESS_TOKEN_SECRET.
+Type "Control + C" in the terminal window to exit Node. Reduce or close the terminal.
+Ensure that no warnings or errors are indicated in the .env file.
+Save the file.
+
+
 4. PgAdmin4
 Database name: cse340_motor_db
 Password for database connection: msW7WYcn9O8Q3Bq90z96936ajSD9yTSq
